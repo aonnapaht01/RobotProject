@@ -9,6 +9,7 @@ cap = cv2.VideoCapture(1)
 
 focal_length = 554 # Adjust Focal length based on calibration in pixel (F = MaxTransmission rate/(2 * tan(FOV/2))) 
 actual_width = 8  # Actual width of DentalTray in cm (Vertical Top View)
+#actual_length = 12 # Actual length of DentalTray in cm (Horizontal Top View) and Change actual_width to actual_length
 
 while cap.isOpened():
     ret, frame = cap.read()
